@@ -84,6 +84,23 @@ Top level domain expansion
 ## OUTPUT:
 ![Screenshot 2024-09-23 184841](https://github.com/user-attachments/assets/c5bfba03-4e86-4a62-8502-c2e001e23d60)
 
+![image](https://github.com/user-attachments/assets/da6ac525-0399-4cb2-80dd-4d58339c1078)
+
+
+## dnsenum
+Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
+
+Get the host’s addresses (A record).
+Get the namservers (threaded).
+Get the MX record (threaded).
+Perform axfr queries on nameservers and get BIND versions(threaded).
+Get extra names and subdomains via google scraping (google query = “allinurl: -www site:domain”).
+Brute force subdomains from file, can also perform recursion on subdomain that have NS records (all threaded).
+Calculate C class domain network ranges and perform whois queries on them (threaded).
+Perform reverse lookups on netranges (C class or/and whois netranges) (threaded).
+Write to domain_ips.txt file ip-blocks.
+This program is useful for pentesters, ethical hackers and forensics experts. It also can be used for security tests.
+
 ![Screenshot 2024-09-23 190214](https://github.com/user-attachments/assets/29113bd6-d9e9-42ce-a9eb-f7195c3d972c)
 
 
@@ -103,6 +120,14 @@ Top level domain expansion
 
 ![Screenshot 2024-09-23 190834](https://github.com/user-attachments/assets/4c638858-b0f7-48a4-8b3d-172e8d8d048e)
 
+
+# Telnet for smtp enumeration
+Telnet allows to connect to remote host based on the port no. For smtp port no is 25
+telnet <host address> 25 to connect
+and issue appropriate commands
+  
+ ## Output
+ ![image](https://github.com/user-attachments/assets/545c384c-121e-42f6-9bdb-89494b3df146)
 
 
 ## nmap –script smtp-enum-users.nse <hostname>
